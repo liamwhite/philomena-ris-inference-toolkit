@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "philomena-ris-inference-toolkit"
+version = "0.1.0"
+description = "Batch inference setup for Philomena databases"
+authors = ["Liam <byteslice@airmail.cc>"]
+license = "Apache-2.0"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+transformers = "^4.47.1"
+torch = "^2.5.1"
+requests = "^2.32.3"
+fire = "^0.7.0"
+pillow = "^11.1.0"
+ujson = "^5.10.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
